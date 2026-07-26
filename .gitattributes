@@ -1,0 +1,4 @@
+# Preserve formal experiment artifacts byte-for-byte, including source line
+# endings and the UTF-8 BOM retained by one audited CSV.
+data/**/*.csv -text whitespace=-blank-at-eol,-blank-at-eof
+data/**/*.jsonl -text whitespace=-blank-at-eol,-blank-at-eof

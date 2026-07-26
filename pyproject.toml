@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lss-bench"
+version = "0.1.0"
+description = "A benchmark for learner-state memory risks in LLM tutoring systems."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0 AND CC-BY-SA-4.0"
+license-files = [
+  "LICENSE",
+  "LICENSES/CC-BY-SA-4.0.txt",
+]
+authors = [
+  { name = "Huixian Yao", email = "yaohuixian@hunnu.edu.cn" },
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/AugustRemilia/LSS-Bench"
+Repository = "https://github.com/AugustRemilia/LSS-Bench"
+Issues = "https://github.com/AugustRemilia/LSS-Bench/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+lss-bench-validate = "lss_bench.validate:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lss_bench*"]
+
+[tool.setuptools.data-files]
+"share/lss-bench" = [
+  "DATA_CARD.md",
+  "THIRD_PARTY_NOTICES.md",
+]
+"share/lss-bench/licenses" = [
+  "LICENSES/README.md",
+  "LICENSES/CC-BY-SA-4.0.txt",
+]
+"share/lss-bench/data" = [
+  "data/README.md",
+  "data/category_mapping.csv",
+]
+"share/lss-bench/data/single_turn/coverage" = [
+  "data/single_turn/coverage/items.csv",
+]
+"share/lss-bench/data/single_turn/stress" = [
+  "data/single_turn/stress/items.csv",
+  "data/single_turn/stress/items.jsonl",
+]
+"share/lss-bench/data/multi_turn/coverage_16turn" = [
+  "data/multi_turn/coverage_16turn/families.jsonl",
+  "data/multi_turn/coverage_16turn/turns.jsonl",
+  "data/multi_turn/coverage_16turn/checkpoints.csv",
+]
+"share/lss-bench/data/multi_turn/stress_16turn" = [
+  "data/multi_turn/stress_16turn/families.jsonl",
+  "data/multi_turn/stress_16turn/turns.jsonl",
+  "data/multi_turn/stress_16turn/checkpoints.csv",
+]
+"share/lss-bench/data/multi_turn/core_stress_24turn" = [
+  "data/multi_turn/core_stress_24turn/families.jsonl",
+  "data/multi_turn/core_stress_24turn/turns.csv",
+  "data/multi_turn/core_stress_24turn/checkpoints.csv",
+]
+"share/lss-bench/evaluation" = [
+  "evaluation/criteria.md",
+  "evaluation/blind_expert_review.md",
+]
+"share/lss-bench/results" = [
+  "results/README.md",
+  "results/educational_risk_rates.csv",
+  "results/valid_personalization.csv",
+  "results/expert_review_summary.csv",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
