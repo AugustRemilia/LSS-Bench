@@ -1,7 +1,7 @@
-design,expert_supported_risk_count
-DMU,26
-PCMU,21
-ELMU,29
-MPP,43
-CLEAR-Mem,0
-ALL,119
+design,reviewed_cases,risk_count_lenient_ge1of3,risk_count_majority_ge2of3
+DMU,32,24,17
+PCMU,25,17,12
+ELMU,36,22,13
+MPP,53,42,26
+CLEAR-Mem,8,0,0
+ALL,154,105,68

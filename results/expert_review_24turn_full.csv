@@ -1,0 +1,7 @@
+design,reviewed_plans,risk_count_lenient_ge1of3,risk_count_majority_ge2of3
+DMU,30,16,14
+PCMU,30,16,13
+ELMU,30,14,12
+MPP,30,20,17
+CLEAR-Mem,30,0,0
+ALL,150,66,56
