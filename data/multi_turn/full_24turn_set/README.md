@@ -19,10 +19,8 @@ The manuscript reports the 24-turn core stress test using a **5-family subset**
 | LHH-LAUNDER-MATH-SLOPE | LH4 | no |
 | LHH-SELFEDIT-ALGEBRA | LH5 | no |
 
-The subset was chosen because these families show the clearest and most stable
-differences among the designs, which makes them the most informative basis for
-comparison. **The remaining families are not discarded**; they are retained here
-as the full 24-turn set.
+The five families were selected because they stably expose weakly governed risk
+under pressure; the remaining three are retained here as the full 24-turn set.
 
 ## Contents
 
@@ -32,5 +30,6 @@ the delayed task, the counter-evidence event, and the expected safe and risky
 instructional paths.
 
 Generated teaching-plan text and item-level expert labels are intentionally not
-included in this public candidate, pending redistribution, anonymization and
-consent checks (see `results/README.md`).
+included in this public candidate, except for the four case plans released under
+`data/multi_turn/core_stress_24turn/case_plans/`; the remaining text awaits
+redistribution, anonymization and consent checks (see `results/README.md`).
