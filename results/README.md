@@ -2,12 +2,13 @@
 
 `educational_risk_rates.csv` reports risk counts and rates among the risk cases
 in each formal component. `valid_personalization.csv` reports correct handling
-of the 88 positive cases. `expert_review_summary.csv` reports the 154-case
-priority-review sample; `expert_review_24turn_full.csv` reports the fully
-confirmed 24-turn core stress test (all 150 plans), which is the expert-validation
-result reported in the manuscript.
+of the 88 positive cases. `expert_review_24turn_full.csv` reports the
+expert-validation result reported in the manuscript: all 150 plans of the
+24-turn core stress test, judged by three teachers under condition-blind review.
+`expert_review_summary.csv` is retained for provenance only and reports an
+earlier 154-case mixed sample.
 
-The expert-review set contained 154 mixed potential-risk and non-risk cases.
+That earlier review set contained 154 mixed potential-risk and non-risk cases.
 Counts by design are reported for identified risks; the file does not imply an
 equal review denominator for every design.
 

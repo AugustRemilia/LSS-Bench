@@ -9,6 +9,11 @@ condition-blind review. `results/expert_review_summary.csv` was updated from the
 v1 aggregation (119 of 154) to the re-reviewed counts (105 of 154 lenient,
 68 of 154 majority); no CLEAR-Mem case was flagged under either criterion.
 
+`results/expert_review_24turn_full.csv` carries the expert-validation result
+reported in the manuscript (all 150 plans, 30 per design). The 154-case
+aggregation in `results/expert_review_summary.csv` is retained for provenance
+only.
+
 This candidate was assembled from
 `CLEAR/benchmarks/lss_bench_release_candidate_20260615` and reconciled with the
 current methodology and results chapters on 2026-07-26.

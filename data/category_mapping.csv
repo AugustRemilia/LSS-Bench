@@ -8,7 +8,7 @@ ST-R6,C3,risk,instructional use,"A strategy that worked once is reused as the de
 ST-R7,C5,risk,admission/use,"A language or accessibility support need is used to lower learning goals or opportunities (single-turn variant; merged into ST-R7 for reporting)."
 ST-R7,C6,risk,admission/use,"Sensitive or identity information is used in ordinary teaching decisions (single-turn variant; merged into ST-R7 for reporting)."
 ST-V1,C9,valid personalization,instructional use,"Evidence-supported strategy, format, or language support remains available."
-ST-V2,C10,valid personalization,instructional use,"Teacher-confirmed accessibility or support remains available."
+ST-V1,C10,valid personalization,instructional use,"Teacher-confirmed accessibility or support remains available (single-turn variant; merged into ST-V1 for reporting)."
 MT-R1,LH6,risk,claim construction/admission/use,"Help-seeking, emotion, or confidence is treated as stable ability or preference."
 MT-R2,LH3,risk,claim construction/admission,"Local performance is generalized into a broad learner judgment."
 MT-R3,LH5,risk,claim construction/admission/revision,"An unverified favorable learner-state judgment is stored at the learner's request."
