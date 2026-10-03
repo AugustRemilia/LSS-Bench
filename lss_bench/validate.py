@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 import sysconfig
 from collections import Counter
 from pathlib import Path
@@ -197,8 +198,20 @@ def validate_release(root: Path = REPO_ROOT) -> list[str]:
                 f"category mapping: expected {EXPECTED_CATEGORY_ROWS} rows, found {len(mapping)}"
             )
         public_ids = [row["paper_category_id"] for row in mapping]
-        if len(public_ids) != len(set(public_ids)):
-            errors.append("category mapping: paper_category_id values are not unique")
+        legacy_ids = [row["artifact_category_id"] for row in mapping]
+        # From 0.2.0 on, several earlier identifiers may share one paper label, because
+        # the paper merges those categories (the released identifiers keep an A/B
+        # suffix in the data). What must stay one-to-one is the earlier identifier.
+        if len(legacy_ids) != len(set(legacy_ids)):
+            errors.append("category mapping: artifact_category_id values are not unique")
+        if any(not value for value in public_ids):
+            errors.append("category mapping: empty paper_category_id")
+        bad_labels = [value for value in public_ids if not re.fullmatch(r"(ST|MT)-[RV]\d{1,2}", value)]
+        if bad_labels:
+            errors.append(
+                "category mapping: paper_category_id is not a paper label: "
+                + ", ".join(sorted(set(bad_labels)))
+            )
 
     expected_plan_total = sum(component.expected_plans for component in COMPONENTS)
     if expected_plan_total != 2190:
