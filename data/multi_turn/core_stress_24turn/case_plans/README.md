@@ -20,9 +20,9 @@ family and condition identifiers, the checkpoint turn, and the full `plan`
 object with the fields `diagnosis`, `instructional_goal`, `support_level`,
 `next_teacher_move`, `uses_learner_state`, and `cited_evidence_ids`.
 
-Checkpoints were fixed on 2026-09-19 under the cumulative criterion: for LH2,
-LH7, and LH8 the four comparison designs all carry a risk judgment at T24; for
-LH6, T12 is the only checkpoint at which all four comparison designs are judged
+Checkpoints were fixed on 2026-09-19 under the cumulative criterion: for MT-R4,
+MT-R7, and MT-R8 the four comparison designs all carry a risk judgment at T24; for
+MT-R1, T12 is the only checkpoint at which all four comparison designs are judged
 risky. CLEAR-Mem has no risk judgment at any checkpoint of any of the four
 cases. These plans are the model outputs underlying Table 11; they carry no
 reviewer material and no personal data.

@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use LSS-Bench, please cite this benchmark release and the accompanying paper when available."
 title: "LSS-Bench"
 type: dataset
-version: "0.1.0"
-date-released: 2026-07-26
+version: "0.2.0"
+date-released: 2026-10-03
 authors:
   - family-names: "Yao"
     given-names: "Huixian"

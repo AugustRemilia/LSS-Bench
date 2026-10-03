@@ -15,12 +15,25 @@ The benchmark asks two complementary questions:
 
 ## Status
 
-Version 0.1.0 is the first private release candidate aligned with the current
-paper methodology. It contains the five formal benchmark components, aggregate
-reported results, licensing, and citation metadata. Raw API logs, development
-pilots, identifiable reviewer files, and model-generated teaching-plan text
-are excluded. The remaining checks before public release are tracked in
+Version 0.2.0 aligns the released category identifiers with the taxonomy used in
+the paper. It contains the five formal benchmark components, aggregate reported
+results, licensing, and citation metadata. Raw API logs, development pilots,
+identifiable reviewer files, and model-generated teaching-plan text are
+excluded. The remaining checks before public release are tracked in
 [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md).
+
+### Release notes
+
+- **0.2.0** - Category identifiers now follow the paper's labels. Single-turn
+  categories use `ST-R*` and `ST-V*`; multi-turn categories use `MT-R*` and
+  `MT-V*`. Where the paper reports one label for two earlier identifiers, the
+  released identifier keeps a variant suffix (`ST-R4-A`/`ST-R4-B`,
+  `ST-R7-A`/`ST-R7-B`, `ST-V1-A`/`ST-V1-B`). The earlier `C`/`LH` identifiers
+  are retained only in [`data/category_mapping.csv`](data/category_mapping.csv)
+  so that files downloaded from 0.1.0 can still be traced. Scenario-family
+  identifiers that begin with `LHH-` name the 24-turn high-pressure family set
+  and are not category labels.
+- **0.1.0** - First private release candidate.
 
 ## Formal Components
 
@@ -75,8 +88,9 @@ lss_bench/
 
 The source manifests retain several internal artifact fields for exact
 traceability. These fields are not intended as general educational terminology.
-Use [`data/category_mapping.csv`](data/category_mapping.csv) for the
-reader-facing taxonomy.
+Category fields and identifiers now use the paper's labels; the earlier `C`/`LH`
+identifiers are recorded in [`data/category_mapping.csv`](data/category_mapping.csv)
+for files downloaded from version 0.1.0.
 
 ## Validate the Release
 
